@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .counter-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .counter-value {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .counter-controls button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #27ae60;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .counter-controls button:hover {
+            background-color: #219150;
+        }
+        .counter-controls button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+       
+    </style>
+</head>
+<body>
+
+<div class="counter-container">
+    <div class="counter-value" id="counterValue">0</div>
+    <div class="counter-controls">
+        <button onclick="decrementCounter()">Decrement</button>
+        <button onclick="resetCounter()">Reset</button>
+        <button onclick="incrementCounter()">Increment</button>
+    </div>
+    <div class="input">
+        <input type="number" placeholder="Enter a value" id="input">
+        <button onclick="applyCustomValue()">Count</button>
+    </div>
+</div>
+
+
+
+    
+<script src="script.js"></script>
+</body>
+</html>
